@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: #111;
+    overflow: hidden;
+}
+
+span{
+    position: absolute;
+    pointer-events: none;
+
+}
+
+span::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('google-g4addb3526_640.png');
+    background-size: cover;
+    animation: moveShape 1s linear infinite;
+}
+
+@keyframes moveShape{
+    0%{
+        transform: translate(0) rotate(0deg);
+    }
+    100%{
+        transform: translate(300px) rotate(360deg);
+    }
+}
