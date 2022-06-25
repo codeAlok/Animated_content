@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background: #121212;
+        }
+        img{
+            width: 47%;
+            cursor: pointer;
+            filter: grayscale(100%);  /* this keep image by default in grey */
+            transition: 0.5s;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            width: 90%;
+            margin:0 auto;
+        }
+        img:hover{
+            filter: grayscale(0%); /* this turn grey into colorful */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Windows-11-Wallpaper01.jpg" alt="" onClick="this.color = blue">
+        <img src="Windows-11-Wallpaper01.jpg" alt="">
+    </div>
+</body>
+</html>
