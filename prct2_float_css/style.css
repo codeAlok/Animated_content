@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    border: 3px solid red;
+    background-color: red;
+    height: 5vh;
+}
+#navigation{
+    background-color: green;
+    float: right;
+    margin: 5px 5px;
+
+}
+#navigation li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
